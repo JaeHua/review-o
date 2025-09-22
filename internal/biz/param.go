@@ -30,6 +30,7 @@ type AppealParam struct {
 
 // AuditAppealParam 运营审核申诉的参数
 type AuditAppealParam struct {
+	AppealID int64 // 申诉ID
 	ReviewID int64 // 评价ID
 	OpUser   string
 	OpReason string

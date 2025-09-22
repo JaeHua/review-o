@@ -60,19 +60,21 @@ components:
     schemas:
         AuditAppealReply:
             type: object
-            properties:
-                appealID:
-                    type: string
+            properties: {}
             description: 对申诉进行审核的返回值
         AuditAppealRequest:
             type: object
             properties:
                 appealID:
                     type: string
+                reviewID:
+                    type: string
                 status:
                     type: integer
                     format: int32
                 opUser:
+                    type: string
+                opReason:
                     type: string
                 opRemarks:
                     type: string
